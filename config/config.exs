@@ -8,7 +8,8 @@
 import Config
 
 config :popcorn,
-  ecto_repos: [Popcorn.Repo]
+  ecto_repos: [Popcorn.Repo],
+  generators: [binary_id: true]
 
 # Configures the endpoint
 config :popcorn, PopcornWeb.Endpoint,
